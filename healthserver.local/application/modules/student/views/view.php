@@ -2,12 +2,12 @@
                     <div class="page-bar">
                         <div class="page-title-breadcrumb">
                             <div class=" pull-left">
-                                <div class="page-title">All Students List</div>
+                                <div class="page-title">All Recordss List</div>
                             </div>
                             <ol class="breadcrumb page-breadcrumb pull-right">
                                 <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="<?php echo base_url();?>dashboard">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
                                 </li>
-                                <li class="active">Students</li>
+                                <li class="active">Recordss</li>
                             </ol>
                         </div>
                     </div>
@@ -24,14 +24,14 @@
 					                        <div class="col-md-12">
 					                            <div class="card card-box">
 					                                <div class="card-head">
-					                                    <header>All Students List</header>
-					                                    
+					                                    <header>All Recordss List</header>
+
 					                                </div>
 					                                <div class="card-body ">
 					                                    <div class="row">
 					                                        <div class="col-md-6 col-sm-6 col-6">
 					                                            <div class="btn-group">
-					                                                <a href="<?php echo base_url();?>student/add" id="addRow" class="btn btn-info">
+					                                                <a href="<?php echo base_url();?>Records/add" id="addRow" class="btn btn-info">
 					                                                    Add New <i class="fa fa-plus"></i>
 					                                                </a>
 					                                            </div>
@@ -83,22 +83,22 @@
 					                                            </tr>
 					                                        </thead>
 					                                        <tbody>
-																<?php foreach($students as $student):?>
-																<!-- <?php print_r($student)?> -->
+																<?php foreach($Recordss as $Records):?>
+																<!-- <?php print_r($Records)?> -->
 																	<tr class="odd gradeX">
-																		<td class="left"><?=$student->id;?></td>
-																		<td><span data-image="<?=$student->image;?>"><?=ucfirst($student->title." ".$student->fullname);?></span></td>
-																		<td class="left"><?=$student->course;?></td>
-																		<td><a href="tel:<?=$student->phone;?>">
-																				<?=$student->phone;?> </a></td>
-																		<td><a href="mailto:<?=$student->email;?>">
-																				<?=$student->email;?> </a></td>
-																		<td class="left"><?=$student->date_of_enrollement;?></td>
+																		<td class="left"><?=$Records->id;?></td>
+																		<td><span data-image="<?=$Records->image;?>"><?=ucfirst($Records->title." ".$Records->fullname);?></span></td>
+																		<td class="left"><?=$Records->course;?></td>
+																		<td><a href="tel:<?=$Records->phone;?>">
+																				<?=$Records->phone;?> </a></td>
+																		<td><a href="mailto:<?=$Records->email;?>">
+																				<?=$Records->email;?> </a></td>
+																		<td class="left"><?=$Records->date_of_enrollement;?></td>
 																		<td class="center">
 																			<?php
-																				if($due_detail[$student->id] == "complete"){
+																				if($due_detail[$Records->id] == "complete"){
 																					echo "<span class='label label-sm label-success'>COMPLETE</span>";
-																				}else if($due_detail[$student->id] == "ok"){
+																				}else if($due_detail[$Records->id] == "ok"){
 																					echo "<span class='label label-sm label-warning'>ACTIVE</span>";
 																				}else{
 																					echo "<span class='label label-sm label-danger'>DUE</span>";
@@ -106,11 +106,11 @@
 																			?>
 																		</td>
 																		<td>
-																			<a href="<?=base_url()."student/view/".$student->id;?>" class="btn btn-primary btn-xs">
+																			<a href="<?=base_url()."Records/view/".$Records->id;?>" class="btn btn-primary btn-xs">
 																				<i class="fa fa-pencil"></i>
 																			</a>
-																			
-																			<a href="<?=base_url()."fee/add/".$student->id;?>" class="btn btn-danger btn-xs">
+
+																			<a href="<?=base_url()."fee/add/".$Records->id;?>" class="btn btn-danger btn-xs">
 																				<i class="fa fa-bitcoin"></i>
 																			</a>
 																		</td>
@@ -129,27 +129,27 @@
 
                                     <div class="tab-pane" id="tab2">
                                         <div class="row">
-											<?php foreach($students as $student):?>
+											<?php foreach($Recordss as $Records):?>
 					                        <div class="col-md-4">
 				                                <div style="width:414px; height:318px;" class="card card-box">
 				                                    <div class="card-body no-padding ">
 				                                    	<div class="doctor-profile">
-				                                                <img style="width:112px; height:112px;" src="<?=base_url()."public/uploads/students/".$student->image;?>" class="doctor-pic" alt=""> 
+				                                                <img style="width:112px; height:112px;" src="<?=base_url()."public/uploads/Recordss/".$Records->image;?>" class="doctor-pic" alt="">
 					                                        <div class="profile-usertitle">
-					                                            <div class="doctor-name"> <?=$student->fullname;?> </div>
-					                                            <div class="name-center"> <?=$student->course;?> </div>
+					                                            <div class="doctor-name"> <?=$Records->fullname;?> </div>
+					                                            <div class="name-center"> <?=$Records->course;?> </div>
 					                                        </div>
-				                                                <p><?=$student->address;?></p> 
-				                                                <div><p><i class="fa fa-phone"></i><a href="tel:<?=$student->phone;?>"> <?=$student->phone;?> </a></p> </div>
+				                                                <p><?=$Records->address;?></p>
+				                                                <div><p><i class="fa fa-phone"></i><a href="tel:<?=$Records->phone;?>"> <?=$Records->phone;?> </a></p> </div>
 					                                        <div class="profile-userbuttons">
-					                                            <a href="<?=base_url()."student/view/".$student->id;?>" class="btn btn-circle deepPink-bgcolor btn-sm">Read More</a>
+					                                            <a href="<?=base_url()."Records/view/".$Records->id;?>" class="btn btn-circle deepPink-bgcolor btn-sm">Read More</a>
 					                                        </div>
 				                                        </div>
 				                                    </div>
 				                                </div>
 					                        </div>
 											<?php endforeach;?>
-                    				
+
                                     </div>
                                 </div>
                             </div>

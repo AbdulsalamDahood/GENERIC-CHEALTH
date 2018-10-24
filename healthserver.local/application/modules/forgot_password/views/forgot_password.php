@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <!-- Mirrored from bulkit.cssninja.io/landing-v3-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Mar 2018 16:32:12 GMT -->
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Aptech | Forgot Password</title>
+        <title>Crypthealth | Forgot Password</title>
         <link rel="icon" type="image/png" href="<?php echo base_url();?>public/assets/images/favicon.png" />
         <!-- Core css -->
         <link rel="stylesheet" id="bulma" href="<?php echo base_url();?>public/assets/css/bulma.css" />
@@ -43,9 +43,9 @@
                                     } else {
                                         echo "<i class=\"sl sl-icon-question pr-10\"></i>Enter E-mail To Send Reset Link";
                                     }
-                                    
+
                                 ?>
-                             
+
 
                         </a>
                         </div>
@@ -56,8 +56,8 @@
                                 <div class="column"></div>
                                 <div class="column is-5">
                                     <!-- Forget Form Form -->
-                                    
-                                  
+
+
 
                                     <?php echo form_open("forgot-password");?>
 
@@ -68,7 +68,7 @@
                                                     <?php echo form_input($email);?>
                                                 </div>
                                             </div>
-                                            
+
                                             <!-- Submit -->
                                             <p class="control login">
                                                 <button class="button button-cta primary-btn btn-align-lg btn-outlined is-bold is-fullwidth rounded raised no-lh">Send Reset Message</button>
@@ -92,10 +92,10 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
             <!-- /Form section -->
-            
+
             <!-- Image section (hidden on mobile) -->
             <div class="column login-column is-5 is-hidden-mobile hero-banner">
                 <div class="hero is-fullheight is-theme-primary is-relative">
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                     <img class="login-city" src="<?php echo base_url();?>public/assets/images/illustrations/drawings/city.svg" alt="">
-                </div>  
+                </div>
             </div>
             <!-- /Image section -->
         </div>

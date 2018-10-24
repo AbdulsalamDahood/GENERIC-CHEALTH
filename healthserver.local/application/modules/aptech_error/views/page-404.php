@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from radixtouch.in/templates/admin/smart/source/light/page-404.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 Jun 2018 21:37:03 GMT -->
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

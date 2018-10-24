@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <!-- Mirrored from bulkit.cssninja.io/landing-v3-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Mar 2018 16:32:12 GMT -->
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Aptech | Reset Password</title>
+        <title>Crypthealth | Reset Password</title>
         <link rel="icon" type="image/png" href="<?php echo base_url();?>public/assets/images/favicon.png" />
         <!-- Core css -->
         <link rel="stylesheet" id="bulma" href="<?php echo base_url();?>public/assets/css/bulma.css" />
@@ -43,9 +43,9 @@
                                     } else {
                                         echo "<i class=\"sl sl-icon-question pr-10\"></i>Enter New Password";
                                     }
-                                    
+
                                 ?>
-                             
+
 
                         </a>
                         </div>
@@ -56,7 +56,7 @@
                                 <div class="column"></div>
                                 <div class="column is-5">
 
-                                    
+
                                     <!-- Reset Form -->
                                     <?php echo form_open('forgot-password/reset/' . $code);?>
                                         <div id="recover-form" class="login-form animated preFadeInLeft fadeInLeft
@@ -86,7 +86,7 @@
                                         </div>
                                     <?php echo form_close();?>
                                     <!-- /Reset Form -->
-                                    
+
 
 
                                     <!-- Toggles -->
@@ -102,10 +102,10 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
             <!-- /Form section -->
-            
+
             <!-- Image section (hidden on mobile) -->
             <div class="column login-column is-5 is-hidden-mobile hero-banner">
                 <div class="hero is-fullheight is-theme-primary is-relative">
@@ -123,7 +123,7 @@
                         </div>
                     </div>
                     <img class="login-city" src="<?php echo base_url();?>public/assets/images/illustrations/drawings/city.svg" alt="">
-                </div>  
+                </div>
             </div>
             <!-- /Image section -->
         </div>

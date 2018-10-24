@@ -2,14 +2,14 @@
                     <div class="page-bar">
                         <div class="page-title-breadcrumb">
                             <div class=" pull-left">
-                                <div class="page-title">Add Student</div>
+                                <div class="page-title">Add Record</div>
                             </div>
                             <ol class="breadcrumb page-breadcrumb pull-right">
                                 <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="<?php echo base_url();?>dashboard">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
                                 </li>
-                                <li><a class="parent-item" href="<?php echo base_url();?>student">Student</a>&nbsp;<i class="fa fa-angle-right"></i>
+                                <li><a class="parent-item" href="<?php echo base_url();?>Record">Record</a>&nbsp;<i class="fa fa-angle-right"></i>
                                 </li>
-                                <li class="active">Add Student</li>
+                                <li class="active">Add Record</li>
                             </ol>
                         </div>
                     </div>
@@ -18,16 +18,16 @@
 								<div class="col-sm-12">
 									<div class="card-box">
 
-									
+
 										<div class="card-head">
-											<header>Add Student</header>
+											<header>Add Record</header>
 											<div class="pull-right"><?php
-												if(isset($form_status)){echo $form_status;} ?></div>	
+												if(isset($form_status)){echo $form_status;} ?></div>
 										</div>
 
 
 										<div class="card-body row">
-										
+
 											<div class="col-lg-12 p-t-20">
 												<div class="col-lg-3 p-t-20 pull-right">
 													<div class="col-md-12">
@@ -39,7 +39,7 @@
 												</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
 													<input value="<?php if(isset($enq_detail)){echo $enq_detail->title;}?>" class="mdl-textfield__input" name="title" type="text" id="title" readonly tabIndex="-1">
 													<label for="title" class="pull-right margin-0">
@@ -54,14 +54,14 @@
 												</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
 												<input value="<?php if(isset($enq_detail)){echo $enq_detail->name;}?>" class = "mdl-textfield__input" name="fullname" type = "text" id = "txtFirstName">
 												<label class = "mdl-textfield__label">Name ( Firstname Middlename Lastname ) </label>
 											</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
 												<input value="<?php if(isset($enq_detail)){echo $enq_detail->email;}?>" class = "mdl-textfield__input" name="email" type = "email" id = "txtemail">
 												<label class = "mdl-textfield__label" >Email</label>
@@ -69,14 +69,14 @@
 											</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
 												<input value="<?php if(isset($enq_detail)){echo $enq_detail->phone;}?>" class = "mdl-textfield__input" name="phone" type = "text" id = "txtRollNo">
 												<label class = "mdl-textfield__label" >Mobile No.</label>
 											</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
 													<input value="<?php if(isset($enq_detail)){echo $enq_detail->gender;}?>" class="mdl-textfield__input" name="gender" type="text" id="sample2" readonly tabIndex="-1">
 													<label for="sample2" class="pull-right margin-0">
@@ -91,23 +91,23 @@
 											</div>
 
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
 												<input value="<?php if(isset($enq_detail)){echo $enq_detail->dob;}?>" class = "mdl-textfield__input" value="" name="dob" type = "text" id = "dateOfBirth">
 												<label class = "mdl-textfield__label" >Date Of Birth</label>
 											</div>
 											</div>
 
-											
 
-											<div class="col-lg-6 p-t-20"> 
+
+											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
 												<input value="<?php if(isset($enq_detail)){echo $enq_detail->p_name;}?>" class = "mdl-textfield__input" name="parent_name" type = "text" id = "txtRollNo">
 												<label class = "mdl-textfield__label" >Parent / Gaurdian Name</label>
 											</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
 												<input value="<?php if(isset($enq_detail)){echo $enq_detail->phone;}?>" class = "mdl-textfield__input" name="parent_number" type = "text" id = "txtRollNo">
 												<label class = "mdl-textfield__label" >Parent / Gaurdian Mobile No.</label>
@@ -116,17 +116,17 @@
 
 
 
-											
 
-											<div class="col-lg-12 p-t-20"> 
+
+											<div class="col-lg-12 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
-												<textarea class = "mdl-textfield__input" name="address" row="4"  
+												<textarea class = "mdl-textfield__input" name="address" row="4"
 													id = "text7" ><?php if(isset($enq_detail)){echo $enq_detail->address;}?></textarea>
 												<label class = "mdl-textfield__label" for = "text7">Address / Location</label>
 											</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
 													<input  class="mdl-textfield__input" name="source" type="text" id="source" value="" tabIndex="-1">
 													<label for="source" class="pull-right margin-0">
@@ -141,7 +141,7 @@
 												</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
 													<input class="mdl-textfield__input" name="course" type="text" id="course" value="" tabIndex="-1">
 													<label for="course" class="pull-right margin-0">
@@ -149,15 +149,15 @@
 													</label>
 													<label for="course" class="mdl-textfield__label">Course (If Others Type It) </label>
 													<ul data-mdl-for="course" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-														<?php foreach($student_courses as $student_course):?>
-														<li class="mdl-menu__item" data-val="BY"><?=ucfirst($student_course->name);?></li>
+														<?php foreach($Record_courses as $Record_course):?>
+														<li class="mdl-menu__item" data-val="BY"><?=ucfirst($Record_course->name);?></li>
 														<?php endforeach;?>
 													</ul>
-													<div id="course_data" 
-													<?php 
-														foreach($student_courses as $student_course)
+													<div id="course_data"
+													<?php
+														foreach($Record_courses as $Record_course)
 														{
-															echo "data-".str_replace(" ","",$student_course->name)." ='".$student_course->price."'";
+															echo "data-".str_replace(" ","",$Record_course->name)." ='".$Record_course->price."'";
 														}
 													?>
 													></div>
@@ -173,14 +173,14 @@
 											</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
 												<input class = "mdl-textfield__input" name="date_of_enrollement" type = "text" id = "date1">
 												<label class = "mdl-textfield__label" >Date Of Enrollement</label>
 											</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
 													<input class="mdl-textfield__input" type="text" name="status" id="status" value="" readonly tabIndex="-1">
 													<label for="status" class="pull-right margin-0">
@@ -188,7 +188,7 @@
 													</label>
 													<label for="status" class="mdl-textfield__label">Status</label>
 													<ul data-mdl-for="status" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-														<?php foreach($student_status as $status):?>
+														<?php foreach($Record_status as $status):?>
 															<li class="mdl-menu__item" data-val="BY"><?=ucfirst($status->name);?></li>
 														<?php endforeach;?>
 													</ul>
@@ -197,14 +197,14 @@
 
 											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
-												<input class = "mdl-textfield__input amount" name="installation_amount" type = "text" 
+												<input class = "mdl-textfield__input amount" name="installation_amount" type = "text"
 													pattern = "[0-9]*(\.[0-9]+)?" id = "text5">
 												<label class = "mdl-textfield__label" for = "text5">Installation Amount</label>
 												<span class = "mdl-textfield__error">Number required!</span>
 											</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
 													<input class="mdl-textfield__input" name="payment_type" type="text" id="paytype" value="" readonly tabIndex="-1">
 													<label for="paytype" class="pull-right margin-0">
@@ -222,7 +222,7 @@
 											</div>
 
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
 													<input class="mdl-textfield__input" type="text" name="bank" id="bank" value="" tabIndex="-1">
 													<label for="bank" class="pull-right margin-0">
@@ -240,30 +240,28 @@
 
 											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
-												<input name="initial_deposite" class = "mdl-textfield__input" type = "text" 
+												<input name="initial_deposite" class = "mdl-textfield__input" type = "text"
 													pattern = "-?[0-9]*(\.[0-9]+)?" id = "text5">
 												<label class = "mdl-textfield__label" for = "text5">Initial Deposit</label>
 												<span class = "mdl-textfield__error">Number required!</span>
 											</div>
 											</div>
 
-											<div class="col-lg-6 p-t-20"> 
+											<div class="col-lg-6 p-t-20">
 											<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
 												<input name="next_installement_date" class = "mdl-textfield__input" type = "text" id = "date">
 												<label class = "mdl-textfield__label" >Next Installement Date</label>
 											</div>
 											</div>
 
-											<div class="col-lg-12 p-t-20 text-center"> 
+											<div class="col-lg-12 p-t-20 text-center">
 												<button class="btn btn-pink">submit</button>
 											</div>
 										</div>
-										
+
 									</div>
 								</div>
 							<?php echo form_close();?>
-						</div> 
+						</div>
                     </div>
                 </div>
-
-				
